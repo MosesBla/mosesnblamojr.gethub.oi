@@ -1,0 +1,417 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Dark theme styles for the header */
+  .site-header {
+    background-color: #222; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 10px 0; /* Padding at the top and bottom */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+  }
+  
+  .container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center align container */
+    padding: 0 20px; /* Padding inside the container */
+  }
+  
+  .header-inner {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Center vertically */
+  }
+  
+  .logo {
+    flex: 1; /* Take remaining space */
+  }
+  
+  .logo img {
+    max-width: 100px; /* Adjust logo size */
+  }
+  
+  .site-nav ul {
+    list-style-type: none; /* Remove default list styles */
+    display: flex; /* Flexbox for nav items */
+  }
+  
+  .site-nav ul li {
+    margin-right: 20px; /* Space between nav items */
+  }
+  
+  .site-nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White text color */
+    font-weight: bold; /* Bold font */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .site-nav ul li a:hover {
+    color: #ff6347; /* Change color on hover (coral) */
+  }
+  /* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero {
+    background-color: #1f1f1f; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 100px 0; /* Padding at the top and bottom */
+    text-align: center; /* Center align text */
+  }
+  
+  .hero-content {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto; /* Center align content */
+  }
+  
+  .hero h1 {
+    font-size: 3rem; /* Large heading size */
+    margin-bottom: 20px; /* Space below heading */
+  }
+  
+  .hero p {
+    font-size: 1.2rem; /* Paragraph font size */
+    margin-bottom: 30px; /* Space below paragraph */
+  }
+  
+  .btn {
+    display: inline-block; /* Display as inline block */
+    background-color: #ff6347; /* Coral button color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Padding inside button */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .btn:hover {
+    background-color: #ff4500; /* Darker coral color on hover */
+  }
+  
+  /* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Portfolio section styles */
+  .portfolio {
+    background-color: #f8f8f8; /* Light background color */
+    padding: 80px 0; /* Padding at the top and bottom */
+    text-align: center; /* Center align text */
+  }
+  
+  .portfolio h2 {
+    font-size: 2.5rem; /* Large heading size */
+    margin-bottom: 40px; /* Space below heading */
+  }
+  
+  .portfolio-gallery {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid columns */
+    gap: 20px; /* Gap between grid items */
+  }
+  
+  .portfolio-item {
+    position: relative; /* Position for overlay */
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  .portfolio-item img {
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure block display */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .portfolio-item:hover img {
+    transform: scale(1.1); /* Scale image on hover */
+  }
+  
+  .overlay {
+    position: absolute; /* Absolute position for overlay */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    opacity: 0; /* Hidden by default */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Column layout */
+    transition: opacity 0.3s ease; /* Smooth fade effect */
+  }
+  
+  .portfolio-item:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .overlay h3,
+  .overlay p {
+    color: #fff; /* White text color */
+    text-align: center; /* Center align text */
+  }
+  
+  .overlay p {
+    margin: 10px 0; /* Space around paragraph */
+  }
+  
+  .btn {
+    display: inline-block; /* Display as inline block */
+    background-color: #ff6347; /* Coral button color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Padding inside button */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+    margin-top: 20px; /* Space above button */
+  }
+  
+  .btn:hover {
+    background-color: #ff4500; /* Darker coral color on hover */
+  }
+
+  /* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Services section styles */
+  .services {
+    background-color: #f8f8f8; /* Light background color */
+    padding: 80px 0; /* Padding at the top and bottom */
+    text-align: center; /* Center align text */
+  }
+  
+  .services h2 {
+    font-size: 2.5rem; /* Large heading size */
+    margin-bottom: 40px; /* Space below heading */
+  }
+  
+  .services-grid {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid columns */
+    gap: 30px; /* Gap between grid items */
+  }
+  
+  .service {
+    text-align: left; /* Left align text */
+    padding: 20px; /* Padding inside each service item */
+    background-color: #fff; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for each service item */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .service:hover {
+    transform: translateY(-5px); /* Move up on hover */
+  }
+  
+  .service img {
+    max-width: 60px; /* Adjust icon size */
+    margin-bottom: 20px; /* Space below icon */
+  }
+  
+  .service h3 {
+    font-size: 1.8rem; /* Heading size */
+    margin-bottom: 10px; /* Space below heading */
+  }
+  
+  .service p {
+    font-size: 1.1rem; /* Paragraph font size */
+    color: #666; /* Text color */
+  }
+
+  /* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contact section styles */
+  .contact {
+    background-color: #f8f8f8; /* Light background color */
+    padding: 80px 0; /* Padding at the top and bottom */
+    text-align: center; /* Center align text */
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem; /* Large heading size */
+    margin-bottom: 40px; /* Space below heading */
+  }
+  
+  .contact-form {
+    max-width: 600px; /* Limit form width */
+    margin: 0 auto; /* Center align form */
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Space between form groups */
+  }
+  
+  label {
+    display: block; /* Display labels as blocks */
+    font-weight: bold; /* Bold label text */
+    margin-bottom: 8px; /* Space below labels */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    outline: none; /* Remove outline on focus */
+    border-color: #ff6347; /* Highlight border color */
+  }
+  
+  textarea {
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  .btn {
+    display: inline-block; /* Display as inline block */
+    background-color: #ff6347; /* Coral button color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Padding inside button */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+    margin-top: 20px; /* Space above button */
+  }
+  
+  .btn:hover {
+    background-color: #ff4500; /* Darker coral color on hover */
+  }
+
+  /* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* Set default font */
+  }
+  
+  /* Footer section styles */
+  .site-footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 50px 0; /* Padding at the top and bottom */
+  }
+  
+  .footer-inner {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between; /* Distribute items evenly */
+  }
+  
+  .footer-logo img {
+    max-width: 100px; /* Adjust logo size */
+  }
+  
+  .footer-links ul {
+    list-style-type: none; /* Remove list bullet points */
+    display: flex; /* Flexbox layout for links */
+  }
+  
+  .footer-links ul li {
+    margin-right: 20px; /* Space between list items */
+  }
+  
+  .footer-links ul li a {
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .footer-links ul li a:hover {
+    color: #ff6347; /* Coral color on hover */
+  }
+  
+  .footer-social ul {
+    list-style-type: none; /* Remove list bullet points */
+    display: flex; /* Flexbox layout for social icons */
+  }
+  
+  .footer-social ul li {
+    margin-right: 10px; /* Space between social icons */
+  }
+  
+  .footer-social ul li a img {
+    width: 30px; /* Adjust social icon size */
+  }
+  
+  .footer-bottom {
+    background-color: #222; /* Darker background color */
+    padding: 10px 0; /* Padding at the top and bottom */
+    text-align: center; /* Center align text */
+  }
+  
+  .footer-bottom p {
+    margin: 0; /* Remove default margin */
+    color: #ccc; /* Lighter text color */
+  }
+
+  /* About section styles */
+.about {
+    background-color: #f8f8f8; /* Light background color */
+    padding: 80px 0; /* Padding at the top and bottom */
+    text-align: center; /* Center align text */
+  }
+  
+  .about-content {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center align items vertically */
+  }
+  
+  .about-text {
+    flex: 1; /* Take up remaining space */
+    text-align: left; /* Left align text */
+    max-width: 600px; /* Limit width of text */
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem; /* Large heading size */
+    margin-bottom: 20px; /* Space below heading */
+  }
+  
+  .about-text p {
+    font-size: 1.2rem; /* Paragraph text size */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 20px; /* Space below paragraphs */
+  }
+  
+  .about-image {
+    flex: 1; /* Take up remaining space */
+    text-align: center; /* Center align content */
+  }
+  
+  .about-image img {
+    max-width: 100%; /* Ensure image stays within container */
+    border-radius: 50%; /* Rounded image corners */
+  }
+  
